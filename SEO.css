@@ -1,0 +1,47 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    padding: 0px 10px;
+    background-color: black;
+    border: 2px solid red;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color:pink;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+.nav{
+    display: flex;
+    padding: 10px;
+    background-color: cyan;
+    border-radius: 5px;
+    justify-content: center;
+    border: 2px solid green;
+}
+.aside{
+    display: flex;
+    padding: 10px;
+    background-color: violet;
+    border-radius: 5px;
+    justify-content: center;
+    border: 2px solid rgb(0, 6, 128);
+}
+.main{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(87, 135, 202);
+    border: 2px solid rgb(14, 148, 126);
+}
+.footer{
+    display: flex;
+    padding: 10px;
+    border: 2px solid rgb(183, 26, 215);
+}

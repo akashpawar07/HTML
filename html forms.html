@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foms</title>
+    <style>
+        body {
+            background-color: lightsteelblue;
+        }
+
+        .first{
+            background-color: rgb(5, 5, 18);
+            color: white;
+            margin: 12px 14px;
+        }
+        .first span a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+        .first span{
+            margin-top:  10px;
+        }
+
+        caption {
+            background-color: rgb(79, 164, 132);
+            color: white;
+        }
+
+        tbody {
+            background-color: rgb(71, 131, 129);
+        }
+
+        thead {
+            background-color: rgb(185, 119, 54);
+        }
+        #searchbar{
+            border: 1px solid black;
+            width: 80vh;
+            height: 5vh; 
+            border-radius: 14px;  
+            text-align: center;
+        }  
+        #password{
+            text-align: center;
+        }
+        .pass{
+            text-align: center;
+        }
+        .check{
+            background: #0000ff80;
+    padding: 6px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>  
+    <header>
+        <div class="first">
+            <span>
+                <a href="#">Home </a> 
+                <a href="#">About </a> 
+                <a href="#">Contact </a> 
+                <a href="#"></a> 
+                
+                <marquee behavior="" direction="right"><i>This Webpage is Created By mr.Akash Pawar</i></marquee>
+            </span>
+        </div>
+        <h1 align="center">Trip Academic Year 2022-23</h1>
+        <label for="Search bar"></label>
+        
+        <p class="pass">
+        <input type="search" name="search" placeholder="Search" id="searchbar">
+        </p>
+    </header>
+    <main>
+        <div class="Second">
+            <form action="form.php">
+
+                <label for="datetimeid"><br>
+                    <input type="datetime-local" value="datetine" id="datetimeid">
+                </label><br><br>
+                <label for="textid">
+                   Your Name : <input type="text" placeholder="Enter your name ">
+                </label>
+                <p>
+                    Password: * <input type="password" name="password" id="password" placeholder="**********">
+                </p>
+                <label for="Sectionida"> 
+                    <input type="radio" value="" name="Section" id="Sectionida" required> Male
+                </label>
+                <label for="Sectionidb"> 
+                    <input type="radio" value="" name="Section" id="Sectionidb" required> Female
+                </label>
+                <label for="Sectionidz"> 
+                    <input type="radio" value="" name="Section" id="Sectionidz" required> other
+                </label>
+                <label for="Sectionnide" value="" name="Section" id="Sectionide">
+                </label><br><br>
+                Email <input type="mail" placeholder="Enter Your Mail" required><br><br>
+                DOB <input type="date"><br><br>
+                <input type="file" class="red">
+                
+            </form><br> 
+            <div class="third">
+                   Select Course <select name="location" id="location">
+                    <option value="">--Select Your Course--</option>
+                    <option value="course">CSE</option>
+                    <option value="course">ECE</option>
+                    <option value="course">Civil</option>
+                    <option value="course">ENTC</option>
+                    <option value="course">Electrical</option>
+                    <option value="course">Mechanical</option>
+                    <option value="course">Data Scientist</option>
+                    <option value="course">Artificial Intelegencee</option>
+                </select>
+            </div><br>
+            </ul>
+            <div class="Second">
+                <table width="600" border="5">
+                    <caption>Student Information</caption>
+                    <thead align="center">
+                        <td>Sr.No</td>
+                        <td>Name</td>
+                        <td>class</td>
+                        <td colspan="3">subjects</td>
+                        <td>Marks</td>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td>1</td>
+                            <td>Akash</td>
+                            <td>SE</td>
+                            <td>DM</td>
+                            <td>OOPS</td>
+                            <td>CPP</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Srinath</td>
+                            <td>SE</td>
+                            <td>DM</td>
+                            <td>OOPS</td>
+                            <td>CPP</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ayush</td>
+                            <td>SE</td>
+                            <td>DM</td>
+                            <td>OOPS</td>
+                            <td>CPP</td>
+                            <td>87</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><br>
+        
+        <label for="resetid">
+            <input type="reset" value="reset" name="" id="resetid">
+        </label><br><br>
+        
+        <label for="checkboxid" class="check">
+            <input type="checkbox" value="checkbox" name="check below box befor submiting" id="checkboxid"> Iam Not Roboat 
+        </label><br><br>
+
+        <label for="submitid"></label>
+        <input type="submit" value="Submit" name="sbmit form" id="submitid" required>
+        </label><br><br>
+        
+    </main>
+    <footer>
+    </footer>
+</body>
+</html> 
